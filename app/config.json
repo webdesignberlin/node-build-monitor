@@ -1,20 +1,20 @@
 {
   "monitor": {
     "interval": 5000,
-    "numberOfBuilds": 12,
-    "debug": true
+    "numberOfBuilds": 24,
+    "debug": false
   },
   "services": [
     {
-      "name": "Travis",
+      "name": "Jenkins",
       "configuration": {
-        "slug": "marcells/bloggy"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "marcells/node-build-monitor"
+        "url": "http://jenkins.mcfit.com",
+        "username": "mgerstmann",
+        "password": "",
+        "job": "coachbox-editor-pl",
+        "options": {
+          "strictSSL": false
+        }
       }
     }
   ]

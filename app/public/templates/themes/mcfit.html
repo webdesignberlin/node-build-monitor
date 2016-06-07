@@ -1,0 +1,33 @@
+<main class="mcfit-theme full-size">
+  <header class="header">
+    <h1 class="header__headline">McFIT Developer</h1>
+  </header>
+  <div class="flex-container" data-bind="foreach: builds">
+    <section data-bind='hover: isMenuVisible' class="flex-item build-item">
+      <div data-bind="animateCss: style" class="flex-item__inner">
+        <span data-bind="text: number" class="build-item__number nowrap"></span> | <span data-bind="text: reason" class="build-item__reason"></span> : <b data-bind="text: statusText" class="build-item__status"></b>
+
+        <h2 class="build-item__title">
+          <b data-bind="text: project" class="build-item__project-name"></b>
+          <span data-bind="text: definition, visible: definition" class="build-item__definition"></span>
+        </h2>
+
+        <p class="build-item__time-zone">
+          <span class="duration-icon fa fa-clock-o"></span>
+          <span data-bind="text: time" class="build-item__time"></span><br>
+          <span data-bind="text: duration" class="build-item__duration"></span>
+        </p>
+        <!--<span data-bind="text: requestedFor" class="build-item__for"></span>-->
+
+        <!--<span data-bind="visible: hasWarnings" class="middle fa fa-exclamation-triangle"></span>
+        <span data-bind="visible: hasErrors" class="middle fa fa-times-circle"></span>-->
+      </div>
+
+      <!--<div data-bind="fade: isMenuAvailable() && isMenuVisible(), fadeInDuration: 200, fadeOutDuration: 10" style="display: none" class="overlay">
+        <a data-bind="visible: url, attr: { href: url }" target="_blank">
+          <i class="fa fa-external-link"></i>
+        </a>
+      </div>-->
+    </section>
+  </div>
+</main>

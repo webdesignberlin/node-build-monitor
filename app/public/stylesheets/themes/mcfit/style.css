@@ -1,0 +1,91 @@
+/* Globals */
+:root {
+  --color-primary: #242f3a;
+  --color-text: white;
+  --spacing-medium: 1em;
+}
+
+/* Helper */
+.mcfit-theme .nowrap {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Header */
+.mcfit-theme .header {
+  margin: 0 auto;
+  text-align: center;
+  background: var(--color-primary);
+  color: var(--color-text);
+  padding: var(--spacing-medium);
+}
+
+.mcfit-theme .header__headline {
+  margin: 0;
+}
+
+/* Grid */
+.mcfit-theme .flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.mcfit-theme .flex-item {
+  padding: var(--spacing-medium);
+  width: 250px;
+  flex: auto;
+  transition: width 0.7s ease-out;
+}
+
+.mcfit-theme .flex-item__inner {
+  background: transparent;
+  padding: var(--spacing-medium);
+  box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.8);
+}
+
+/* build items */
+.mcfit-theme .build-item__number {
+  font-size: 1em;
+}
+
+.mcfit-theme .build-item__title {
+  font-weight: normal;
+  font-size: 2.2em;
+}
+
+.mcfit-theme .build-item__time-zone {
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+/*
+.flex-item .overlay {
+  background-color: transparent;
+  position: absolute;
+  margin: 25px;
+  top: 0px;
+  right: 0px;
+}
+
+.flex-item .overlay a {
+  float: left;
+  color: white;
+  font-size: 20pt;
+  background-color: black;
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  opacity: 0.8;
+}*/
+
