@@ -5,6 +5,10 @@
   --spacing-medium: 1em;
 }
 
+body {
+  font-size: 18px;
+}
+
 /* Helper */
 .mcfit-theme .nowrap {
   overflow: hidden;
