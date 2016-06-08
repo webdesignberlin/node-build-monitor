@@ -5,8 +5,10 @@
   --spacing-medium: 1em;
 }
 
-body {
+body, html {
   font-size: 16px;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 /* Helper */
@@ -28,7 +30,34 @@ body {
   margin: 0;
 }
 
+.mcfit-theme .header__logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+}
+
+@media all and (min-width: 600px) {
+  .mcfit-theme .content {
+    width: 85%;
+  }
+  .mcfit-theme .sidebar {
+    width: 15%;
+    max-height: 100vh;
+    overflow: hidden;
+  }
+  /*iframe {
+    max-height: 100vh;
+  }*/
+}
+
+
 /* Grid */
+.mcfit-theme .flex-column {
+  width: 50%;
+  float: left  
+}
+
 .mcfit-theme .flex-container {
   display: flex;
   flex-flow: row wrap;
