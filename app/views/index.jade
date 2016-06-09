@@ -1,7 +1,8 @@
 extends layout
 
 block scripts
-    script(src='/scripts/libs/jquery-2.1.0.min.js')
+    //script(src='/scripts/libs/jquery-2.1.0.min.js')
+    script(src='https://code.jquery.com/jquery-3.0.0-rc1.min.js')
     script(src='/scripts/libs/jquery.color-2.1.2.min.js')
     script(data-main="/scripts/main", src='/scripts/libs/require-2.1.15.min.js')
     script.
@@ -9,7 +10,7 @@ block scripts
     //script(async, src='//platform.twitter.com/widgets.js')
     //script(src='https://code.jquery.com/jquery-3.0.0-rc1.min.js')
     script.
-        setTimeout(function(){
+        /*setTimeout(function(){
         //var iframe = $('#twitter-widget-0');
         //var myIframe = document.getElementById('twitter-widget-0');
         //myIframe.contentWindow.scrollTo(0,500);
@@ -33,10 +34,32 @@ block scripts
                 },scrollTime);
             },scrollTime*2);
         
-        }, 5000)
+        }, 5000)*/
+        setTimeout(function(){
+            (function(){
+                var sidebar = document.getElementById('js-sidebar');
+                var twitterFeed = document.getElementById('twitter-widget-0');
+                var containerHeight = sidebar.clientHeight;
+                var feedHeight = twitterFeed.clientHeight - containerHeight;
+                //var twitterFeed = $('#twitter-widget-0');
+                //var feedHeight = parseInt(twitterFeed.css('height'), 10)
+                
+                function infScroll(){
+                    sidebar.scrollTop +=1;
+          
+                    if(sidebar.scrollTop >= feedHeight){
+                        console.log(feedHeight);
+                        sidebar.scrollTop = 0;
+                        
+                    }
+                    window.requestAnimationFrame(infScroll);
+                }
+                window.requestAnimationFrame(infScroll);
+            }());
+        }, 3000)
 
 block content
     .full-size(data-bind='component: { name: options.theme(), params: { builds: builds } }')
 
-    include options.jade
-    include overlay.jade
+    //include options.jade
+    //include overlay.jade

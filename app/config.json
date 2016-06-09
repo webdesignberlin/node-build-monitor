@@ -1,7 +1,7 @@
 {
   "monitor": {
     "interval": 5000,
-    "numberOfBuilds": 24,
+    "numberOfBuilds": 20,
     "debug": false
   },
   "services": [
@@ -9,8 +9,8 @@
       "name": "Jenkins",
       "configuration": {
         "url": "http://jenkins.mcfit.com",
-        "username": "mgerstmann",
-        "password": "",
+        "username": "jenkins-apiuser",
+        "password": "knack-NKzVzs",
         "job": "coachbox-editor-pl",
         "options": {
           "strictSSL": false
