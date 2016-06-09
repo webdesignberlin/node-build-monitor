@@ -37,7 +37,7 @@ block scripts
         }, 5000)*/
         
         
-        (function() {
+        /*(function() {
             var lastTime = 0;
             var vendors = ['ms', 'moz', 'webkit', 'o'];
             for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
@@ -60,7 +60,18 @@ block scripts
                 window.cancelAnimationFrame = function(id) {
                     clearTimeout(id);
                 };
-        }());
+        }());*/
+        
+        window.requestAnimFrame = (function(){
+            return  window.requestAnimationFrame       || 
+                    window.webkitRequestAnimationFrame || 
+                    window.mozRequestAnimationFrame    || 
+                    window.oRequestAnimationFrame      || 
+                    window.msRequestAnimationFrame     || 
+                    function(/* function */ callback, /* DOMElement */ element){
+                        window.setTimeout(callback, 1000 / 60);
+                    };
+            })();
         
         setTimeout(function(){
             (function(){
@@ -79,9 +90,11 @@ block scripts
                         sidebar.scrollTop = 0;
                         
                     }
-                    window.requestAnimationFrame(infScroll);
+                    //window.requestAnimationFrame(infScroll);
+                    requestAnimFrame(infScroll);
                 }
-                window.requestAnimationFrame(infScroll);
+                //window.requestAnimationFrame(infScroll);
+                requestAnimFrame(infScroll);
             }());
         }, 3000)
 
