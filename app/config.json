@@ -11,7 +11,55 @@
         "url": "http://jenkins.mcfit.com",
         "username": "jenkins-apiuser",
         "password": "knack-NKzVzs",
-        "job": "coachbox-editor-pl",
+        "job": "coachbox-editor_init",
+        "options": {
+          "strictSSL": false
+        }
+      }
+    },
+    {
+      "name": "Jenkins",
+      "configuration": {
+        "url": "http://jenkins.mcfit.com",
+        "username": "jenkins-apiuser",
+        "password": "knack-NKzVzs",
+        "job": "coachbox-editor_build_stage",
+        "options": {
+          "strictSSL": false
+        }
+      }
+    },
+    {
+      "name": "Jenkins",
+      "configuration": {
+        "url": "http://jenkins.mcfit.com",
+        "username": "jenkins-apiuser",
+        "password": "knack-NKzVzs",
+        "job": "coachbox-editor_build_live",
+        "options": {
+          "strictSSL": false
+        }
+      }
+    },
+    {
+      "name": "Jenkins",
+      "configuration": {
+        "url": "http://jenkins.mcfit.com",
+        "username": "jenkins-apiuser",
+        "password": "knack-NKzVzs",
+        "job": "coachbox-editor_deploy_stage",
+        "options": {
+          "strictSSL": false
+        }
+      }
+    },
+    {
+      "name": "Jenkins",
+      "configuration": {
+        "url": "http://jenkins.mcfit.com",
+        "username": "jenkins-apiuser",
+        "password": "knack-NKzVzs",
+        "job": "coachbox-editor_deploy_live",
         "options": {
           "strictSSL": false
         }
