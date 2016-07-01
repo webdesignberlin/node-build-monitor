@@ -86,6 +86,11 @@ body, html {
 .mcfit-theme .build-item__title {
   font-weight: normal;
   font-size: 2.2em;
+  
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
 }
 
 .mcfit-theme .build-item__time-zone {
