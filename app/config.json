@@ -71,7 +71,7 @@
         "url": "http://jenkins.mcfit.com",
         "username": "jenkins-apiuser",
         "password": "knack-NKzVzs",
-        "job": "blacklabel_frontend_init",
+        "job": "blacklabel_dev_frontend_init",
         "options": {
           "strictSSL": false
         }
@@ -83,7 +83,7 @@
         "url": "http://jenkins.mcfit.com",
         "username": "jenkins-apiuser",
         "password": "knack-NKzVzs",
-        "job": "blacklabel_frontend_build",
+        "job": "blacklabel_dev_frontend_build",
         "options": {
           "strictSSL": false
         }
@@ -95,7 +95,7 @@
         "url": "http://jenkins.mcfit.com",
         "username": "jenkins-apiuser",
         "password": "knack-NKzVzs",
-        "job": "blacklabel_frontend_deploy",
+        "job": "blacklabel_dev_frontend_deploy",
         "options": {
           "strictSSL": false
         }
