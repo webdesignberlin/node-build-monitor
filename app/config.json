@@ -107,6 +107,42 @@
         "url": "http://jenkins.mcfit.com",
         "username": "jenkins-apiuser",
         "password": "knack-NKzVzs",
+        "job": "blacklabel_prod_frontend_init",
+        "options": {
+          "strictSSL": false
+        }
+      }
+    },
+    {
+      "name": "Jenkins",
+      "configuration": {
+        "url": "http://jenkins.mcfit.com",
+        "username": "jenkins-apiuser",
+        "password": "knack-NKzVzs",
+        "job": "blacklabel_prod_frontend_build",
+        "options": {
+          "strictSSL": false
+        }
+      }
+    },
+    {
+      "name": "Jenkins",
+      "configuration": {
+        "url": "http://jenkins.mcfit.com",
+        "username": "jenkins-apiuser",
+        "password": "knack-NKzVzs",
+        "job": "blacklabel_prod_frontend_deploy",
+        "options": {
+          "strictSSL": false
+        }
+      }
+    },
+    {
+      "name": "Jenkins",
+      "configuration": {
+        "url": "http://jenkins.mcfit.com",
+        "username": "jenkins-apiuser",
+        "password": "knack-NKzVzs",
         "job": "blacklabel/job/cms/job/dev/job/init",
         "displayName": "[dev] Black Label / CMS / Init",
         "options": {
