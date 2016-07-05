@@ -100,6 +100,18 @@
           "strictSSL": false
         }
       }
+    },
+    {
+      "name": "Jenkins",
+      "configuration": {
+        "url": "http://jenkins.mcfit.com",
+        "username": "jenkins-apiuser",
+        "password": "knack-NKzVzs",
+        "job": "blacklabel/cms/dev/init",
+        "options": {
+          "strictSSL": false
+        }
+      }
     }
   ]
 }
