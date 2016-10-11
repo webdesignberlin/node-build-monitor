@@ -316,6 +316,42 @@
           "strictSSL": false
         }
       }
+    },,
+    {
+      "name": "Jenkins",
+      "configuration": {
+        "url": "http://jenkins.mcfit.com",
+        "username": "jenkins-apiuser",
+        "password": "knack-NKzVzs",
+        "job": "jdb/job/editor/job/live_old_init",
+        "options": {
+          "strictSSL": false
+        }
+      }
+    },
+    {
+      "name": "Jenkins",
+      "configuration": {
+        "url": "http://jenkins.mcfit.com",
+        "username": "jenkins-apiuser",
+        "password": "knack-NKzVzs",
+        "job": "jdb/job/editor/job/live_old_build",
+        "options": {
+          "strictSSL": false
+        }
+      }
+    },
+    {
+      "name": "Jenkins",
+      "configuration": {
+        "url": "http://jenkins.mcfit.com",
+        "username": "jenkins-apiuser",
+        "password": "knack-NKzVzs",
+        "job": "jdb/job/editor/job/live_old_deploy",
+        "options": {
+          "strictSSL": false
+        }
+      }
     },
     {
       "name": "Jenkins",
